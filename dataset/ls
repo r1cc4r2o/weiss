@@ -1,0 +1,14 @@
+.:
+vocab.pkl  idx_valid.pt          
+proc_selected_reactions_chemformer  train_test_valid_preprocessed.pt  yahoo_answers_qa_train.pt
+data                   one2many_prior_b4.pt  test_source.txt                     yahoo_answers_qa.csv              yahoo_answers_qa.txt
+dict_vocab.pt          one2one_prior_r.pt    test_target.txt                     yahoo_answers_qa_test.pt          yahoo_answers_qa_valid_idx_train.pt
+
+./data:
+similarity
+
+./data/similarity:
+pairs_prop.csv  pairs_prop_encoded.csv  test.csv  train.csv  validation.csv  vocab.pkl
+
+./proc_selected_reactions_chemformer:
+dataprep_pipeline_config.yml  proc_selected_reactions_chemformer.csv  selected_reactions.csv

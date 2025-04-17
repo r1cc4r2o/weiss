@@ -1,0 +1,1 @@
+Download the checkpoints [here](https://drive.google.com/file/d/18RA1OlGQozMeibgiex5V8e9Z7nbcY1Fv/view?usp=drivesdk) and unzip the folder. You can store them under `WEISS/checkpoints`.

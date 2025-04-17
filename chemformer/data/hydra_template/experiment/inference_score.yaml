@@ -1,0 +1,35 @@
+# @package _global_
+
+# Output files
+output_score_data: "metrics_scores.csv" # Path to .csv file to which model score results should be written.
+output_sampled_smiles: "sampled_smiles.json" # Path to .json file to which sampled smiles should be written.
+
+
+# Trainer
+seed: 2
+batch_size: 64
+i_chunk: 0
+n_chunks: 1
+
+# Data
+data_path: data_path
+dataset_part: test # Which dataset split to run inference on. ["full", "train", "val", "test"]
+dataset_type: synthesis
+vocabulary_path: vocabulary_path
+task: "backward_prediction" # ["forward_prediction", "backward_prediction"]
+num_predictions: 5
+
+
+# Model args
+model_path: "model_path"
+model_type: bart_sp_wae       # ["bart", "unified", "bart_sp"]
+n_beams: 1
+
+scorers:
+  - FractionInvalidScore
+  - FractionUniqueScore
+  - TanimotoSimilarityScore:
+    - statistics: mean
+  - TopKAccuracyScore
+
+

@@ -1,0 +1,2 @@
+batch_idx	fraction_invalid	fraction_unique	top1_tanimoto_similarity	accuracy_top_1	accuracy_top_3	accuracy_top_5	accuracy_top_10	accuracy_top_20	accuracy_top_30	accuracy_top_40	accuracy_top_50
+0	0.003593749999999951	0.56203125	0.6832149282829895	0.3671875	0.46875	0.4765625	0.5390625	0.5546875	0.578125	0.59375	0.59375

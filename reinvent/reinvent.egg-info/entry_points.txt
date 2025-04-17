@@ -1,0 +1,2 @@
+[console_scripts]
+reinvent = reinvent.Reinvent:main
