@@ -34,13 +34,14 @@
  <img src="img/wss-inference.png" width="45%" >
  <p align="center"> Train&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inference</p>
 
- <figure align="center">
+ <!-- <figure align="center">
   <figcaption>This repository contains the code used in the WEISS paper.</figcaption>
-  <figcaption>Wasserstein Efficient Sampling Strategy for LLMs in Drug Design</figcaption>
-</figure>
+  <figcaption>[Wasserstein Efficient Sampling Strategy for LLMs in Drug Design](https://iopscience.iop.org/article/10.1088/2632-2153/addc33)</figcaption>
+</figure> -->
 </p>
 
 
+This repository contains the code to reproduce the results of the paper [Wasserstein Efficient Sampling Strategy for LLMs in Drug Design](https://iopscience.iop.org/article/10.1088/2632-2153/addc33).
 
 WEISS is a novel framework for efficient diverse sampling applicable to large language models (LLMs) in drug design. We present WEISS (Wasserstein Efficient Sampling Strategy), a novel framework for training and efficient sampling, that enhances the output diversity while preserving its integrity. Our WEISS framework leverages a continuous latent variable to expand the expressiveness of the higher-dimensional representations of each token. The experiments on drug discovery tasks demonstrate that the proposed mechanism not only increases the diversity but also maintains high levels of similarity with the conditioning input. Notably, our model effectively balances the trade-off between generating diverse outputs and ensuring that these outputs remain closely correlated with the input, showing significant improvement overcome the challenges in molecular optimization, with and without RL, and single-step retrosynthesis. Experiments on NLP suggest that WEISS is a versatile framework, applicable to a broader category of autoregressive encoder-decoder models. This README provides instructions on the code usage.
 
@@ -530,12 +531,7 @@ The results will be saved in the `results/` directory, due to the large size of 
 
 ## Contributing
 
-We welcome contributions to this project! If you want to contribute, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b yourbranch/YourBranch`).
-3. Create a new Pull Request.
-
+We welcome contributions to this project! 
 
 ## License
 
@@ -546,14 +542,18 @@ This project is not licensed, but it will be under the MIT License upon acceptan
 If you use this code in your research, please cite the following paper:
 
 ```bibtex
-@article{YourPaper,
-  title={Your Paper Title},
-  author={Author(s) Name(s)},
-  journal={Journal Name},
-  volume={Volume Number},
-  pages={Page numbers},
-  year={Year},
-  publisher={Publisher}
+@article{Tedoldi_2025,
+    doi = {10.1088/2632-2153/addc33},
+    url = {https://dx.doi.org/10.1088/2632-2153/addc33},
+    year = {2025},
+    month = {jun},
+    publisher = {IOP Publishing},
+    volume = {6},
+    number = {2},
+    pages = {025048},
+    author = {Tedoldi, Riccardo and Li, Junyong and Engkvist, Ola and Passerini, Andrea and Westerlund, Annie M and Tibo, Alessandro},
+    title = {WEISS: Wasserstein efficient sampling strategy for LLMs in drug design},
+    journal = {Machine Learning: Science and Technology},
 }
 ```
 
